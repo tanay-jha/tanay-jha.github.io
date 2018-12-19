@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Turtle Learn</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <style>
+            
+            /* Sets the margin and padding for the entire page to be zero. */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            /* CSS properties to style the container class */
+            .container{
+                display: flex;
+                height: 100vh;
+                background: #424e4b15;
+                font-family: "Roboto",Arial, Helvetica, sans-serif;
+            }
+
+            /* CSS Properties to style leftSide class */
+            .leftSide{
+                flex-basis: 75%;
+                height: 100%;
+                /* background-color: rgba(153, 205, 50, 0.568); */
+                border: 1px solid black;
+                
+            }
+
+            /* CSS Properties to style rightSide class */
+            .rightSide{
+                flex-basis: 25%;
+                height: 100%;
+                /* background-color: cadetblue; */
+            }
+            
+            .leftViewport{
+                border: 1px solid black;
+                height: 94%;
+                margin: 2%;
+                
+            }
+
+            .rightViewport{
+                margin: 10px;
+            }
+
+            .subjectButtons{
+                /* margin: 1%; */
+                padding: 1%;
+                border: 1px solid black;
+                text-align: center;
+            }
+            
+            .subjectButtons > button{
+                padding: 10px;
+                font-size: 16px;
+                font-family: "Montserrat",Arial, Helvetica, sans-serif;
+            }
+        
+
+        </style>
+    </head>
+    <body>
+
+        <form action="#" method="post">
+            <!-- this is the main form tag that contains the submission events. -->
+            <div class="container">
+                <!-- The container class breaks the screen into two halves, the question component and the question selection component using flex box. -->
+                <div class="leftSide">
+                    <!-- The leftSide class contains the viewport that displays the questions drawn from the server. -->
+                    <div class="leftViewport">
+                        <!--Questions, Subject Buttons, Navigation buttons and mark for review  -->
+                        <div class="subjectButtons">
+                            <!-- Buttons that switch to different subjects. -->
+                            <button type="submit" class="subButton">Physics</button>
+                            <button type="submit" class="subButton">Chemistry</button>
+                            <button type="submit" class="subButton">Mathematics</button>
+                        </div>
+
+                        <div style="padding: 1%;font-size: 2.3vh;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam libero officiis voluptatum corporis, aliquid quod ducimus iusto ratione ipsa doloremque eligendi qui voluptate fugiat a nobis corrupti excepturi odit provident, cum dolorem eos esse, ullam similique! Ducimus quod voluptatem exercitationem nobis autem tenetur sint dignissimos incidunt molestiae repellendus corrupti doloribus laboriosam vel odio voluptatum alias accusantium minima dolores repudiandae, reprehenderit ut pariatur suscipit a? Cum, reiciendis! Exercitationem fugiat odit sint doloremque aspernatur deserunt dolorum sunt tempora suscipit, quibusdam similique.</p>
+
+                            <div class="questionImage">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="rightSide">
+                    <!-- The rightSide class contains the viewport that displays the question palette -->
+                    <div class="rightViewport">
+                        <!-- 30 buttons, marked for review icons. -->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate libero distinctio at, quo ratione nobis expedita nihil adipisci, nam eos voluptas? Ea ipsam amet delectus facere a at dolores magnam.
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </body>
+</html>
